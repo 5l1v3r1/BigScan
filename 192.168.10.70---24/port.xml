@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///D:/Sma11stuTools/Bigscan/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Mar 04 00:56:55 2020 as: nmap -v -Pn -T4 -p- -&#45;open -n -&#45;min-hostgroup 1024 -&#45;min-parallelism 1024 -iL 192.168.10.70-&#45;&#45;24/ip-result.txt -oX 192.168.10.70-&#45;&#45;24/port.xml -->
+<nmaprun scanner="nmap" args="nmap -v -Pn -T4 -p- -&#45;open -n -&#45;min-hostgroup 1024 -&#45;min-parallelism 1024 -iL 192.168.10.70-&#45;&#45;24/ip-result.txt -oX 192.168.10.70-&#45;&#45;24/port.xml" start="1583254615" startstr="Wed Mar 04 00:56:55 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1583254615"/>
+<taskend task="ARP Ping Scan" time="1583254616" extrainfo="2 total hosts"/>
+<taskbegin task="SYN Stealth Scan" time="1583254616"/>
+<taskprogress task="SYN Stealth Scan" time="1583254647" percent="20.41" remaining="121" etc="1583254768"/>
+<taskprogress task="SYN Stealth Scan" time="1583254677" percent="41.20" remaining="88" etc="1583254764"/>
+<taskprogress task="SYN Stealth Scan" time="1583254707" percent="61.66" remaining="57" etc="1583254764"/>
+<taskend task="SYN Stealth Scan" time="1583254764" extrainfo="131070 total ports"/>
+<host starttime="1583254616" endtime="1583254764"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.10.1" addrtype="ipv4"/>
+<address addr="1C:B7:96:61:B0:A3" addrtype="mac" vendor="Huawei Technologies"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65529">
+<extrareasons reason="no-responses" count="65529"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="37215"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="37443"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+</ports>
+<times srtt="34625" rttvar="3553" to="100000"/>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1583254764"/>
+<taskend task="SYN Stealth Scan" time="1583254769" extrainfo="65535 total ports"/>
+<host starttime="1583254764" endtime="1583254769"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.10.70" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65515">
+<extrareasons reason="resets" count="65515"/>
+</extraports>
+<extraports state="filtered" count="1">
+<extrareasons reason="no-response" count="1"/>
+</extraports>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="kerberos-sec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="902"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="iss-realsecure" method="table" conf="3"/></port>
+<port protocol="tcp" portid="912"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="apex-mesh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5040"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5357"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="wsdapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="X11" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8834"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nessus-xmlrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="49672"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="49676"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="49686"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+<port protocol="tcp" portid="49691"><state state="open" reason="syn-ack" reason_ttl="64"/></port>
+</ports>
+<times srtt="1049" rttvar="96" to="100000"/>
+</host>
+<runstats><finished time="1583254769" timestr="Wed Mar 04 00:59:29 2020" elapsed="154.63" summary="Nmap done at Wed Mar 04 00:59:29 2020; 3 IP addresses (3 hosts up) scanned in 154.63 seconds" exit="success"/><hosts up="3" down="0" total="3"/>
+</runstats>
+</nmaprun>

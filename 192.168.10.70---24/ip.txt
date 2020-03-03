@@ -1,0 +1,6 @@
+# Nmap 7.80 scan initiated Wed Mar 04 00:56:52 2020 as: nmap -v -sn -PE --open -n --min-hostgroup 1024 --min-parallelism 1024 -oG 192.168.10.70---24/ip.txt 192.168.10.70/24
+# Ports scanned: TCP(0;) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.10.1 ()	Status: Up
+Host: 192.168.10.9 ()	Status: Up
+Host: 192.168.10.70 ()	Status: Up
+# Nmap done at Wed Mar 04 00:56:54 2020 -- 256 IP addresses (3 hosts up) scanned in 2.69 seconds
