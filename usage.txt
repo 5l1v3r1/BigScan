@@ -1,1 +1,0 @@
-python Nmap_big_scan.py -t 192.168.10.70/24
